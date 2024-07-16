@@ -1,5 +1,9 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+
+  display: flex;
+  flex-flow: row wrap;
+  
 }
 
 img {
@@ -7,10 +11,43 @@ img {
   height: 100px;
 }
 
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 100%;
+  gap: 52px;
+}
+
+.image-one, .image-two, .image-three, .image-four {
+  width: 200px;
+}
+
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-basis: 100%;
+  gap: 52px;
+}
+
+.text-one, .text-two, .text-three, .text-four {
+  width: 200px;
+  text-align: center;
+}
+
 .title {
   font-size: 36px;
   font-weight: 900;
+
+  padding-bottom: 32px;
+  
+  display: flex;
+  flex-basis: 100%;
+  justify-content: center;
 }
+
 
 /* do not edit this footer */
 .footer {
