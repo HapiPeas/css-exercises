@@ -33,3 +33,13 @@ Note: The emojis may instead show up as one or several text symbols (e.g. &#9734
 - The sidebar has 16px padding.
 - There is 48px padding around the 'cards' section.
 - The cards are arranged horizontally, but wrap to multiple lines when they run out of room on the page.
+
+<!-- Solution Planning -->
+
+<!-- Layout -->
+- Outer container is a flexbox, column [header, body, footer]
+- Body container is a flexbox, row [left links, right-content]
+    - Flex-grow 1/3 for left links, 2/3 right-content
+- Right-content is a flexbox, row, wrap 
+    - Boxes should be [ __ ] pixels wide
+    - Each box has the same text-wrap
